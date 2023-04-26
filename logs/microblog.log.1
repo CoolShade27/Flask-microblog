@@ -1,0 +1,129 @@
+2023-04-26 19:09:48,835 ERROR: Exception on /index [GET] [in d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "D:\Projects\Python\Python microblog\app\routes.py", line 35, in index
+    return render_template(
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 48, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 11, in block 'app_content'
+    {% include '_post.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\_post.html", line 9, in template
+    <a href="{{ url_for('user'), username=post.author.username}}">
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+2023-04-26 19:09:55,108 ERROR: Exception on /index [GET] [in d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "D:\Projects\Python\Python microblog\app\routes.py", line 35, in index
+    return render_template(
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 48, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 11, in block 'app_content'
+    {% include '_post.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\_post.html", line 9, in template
+    <a href="{{ url_for('user'), username=post.author.username}}">
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+2023-04-26 19:09:57,452 ERROR: Exception on /index [GET] [in d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "D:\Projects\Python\Python microblog\app\routes.py", line 35, in index
+    return render_template(
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 48, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 11, in block 'app_content'
+    {% include '_post.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\_post.html", line 9, in template
+    <a href="{{ url_for('user'), username=post.author.username}}">
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='

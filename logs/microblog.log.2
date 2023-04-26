@@ -1,0 +1,102 @@
+2023-04-24 18:49:03,225 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 18:52:30,467 ERROR: Exception on /edit_profile [POST] [in d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 2137, in make_response
+    raise TypeError(
+TypeError: The view function for 'edit_profile' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-24 18:56:49,215 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 18:58:47,086 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 19:31:00,510 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 19:31:15,430 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 20:31:12,544 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 20:32:40,159 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 20:33:54,475 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 20:37:11,945 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 20:38:44,052 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 20:39:46,113 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-24 20:45:39,996 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-25 13:36:21,507 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-25 14:24:04,369 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-25 14:40:06,894 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-25 14:56:31,095 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-25 15:13:50,033 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:31]
+2023-04-25 18:14:21,652 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:33]
+2023-04-25 18:22:17,657 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:33]
+2023-04-25 18:44:35,124 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:33]
+2023-04-25 19:18:46,776 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:33]
+2023-04-25 19:58:06,060 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:48]
+2023-04-25 20:52:43,782 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-25 21:01:51,112 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:54]
+2023-04-26 17:26:47,642 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-26 17:27:11,114 ERROR: Exception on /reset_password_request [POST] [in d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Projects\Python\Python microblog\app\routes.py", line 193, in reset_password_request
+    send_password_reset_email(user)
+  File "D:\Projects\Python\Python microblog\app\email.py", line 21, in send_password_reset_email
+    sender=app.config['DEFAULT_MAIL_SENDER'],
+KeyError: 'DEFAULT_MAIL_SENDER'
+2023-04-26 17:29:39,585 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-26 17:32:42,588 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-26 17:39:13,348 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-26 17:47:35,778 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-26 17:53:51,003 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-26 18:02:00,920 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:46]
+2023-04-26 19:07:44,774 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:48]
+2023-04-26 19:08:02,889 ERROR: Exception on /index [GET] [in d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py:1744]
+Traceback (most recent call last):
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "D:\Projects\Python\Python microblog\app\routes.py", line 35, in index
+    return render_template(
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "D:\Projects\Python\Python microblog\app\templates\base.html", line 48, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "D:\Projects\Python\Python microblog\app\templates\index.html", line 11, in block 'app_content'
+    {% include '_post.html' %}
+  File "d:\projects\python\python microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\Projects\Python\Python microblog\app\templates\_post.html", line 4, in template
+    <a href="{{ url_for('user'), username=post.author.username}}">
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+2023-04-26 19:09:44,663 INFO: Microblog startup [in D:\Projects\Python\Python microblog\app\__init__.py:48]
