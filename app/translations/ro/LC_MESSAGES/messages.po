@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-04-28 17:41+0300\n"
+"POT-Creation-Date: 2023-04-29 17:50+0300\n"
 "PO-Revision-Date: 2023-04-27 16:09+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ro\n"
@@ -35,7 +35,7 @@ msgstr "Parolă"
 msgid "Remember me"
 msgstr "Rămâneți logat"
 
-#: app/forms.py:11 app/routes.py:60
+#: app/forms.py:11 app/routes.py:67
 msgid "Sign in"
 msgstr "Conectați-vă"
 
@@ -47,7 +47,7 @@ msgstr "Email"
 msgid "Repeat password"
 msgstr "Reintroduceți parola"
 
-#: app/forms.py:19 app/routes.py:79 app/templates/register.html:5
+#: app/forms.py:19 app/routes.py:86 app/templates/register.html:5
 msgid "Register"
 msgstr "Înregistrare"
 
@@ -79,66 +79,66 @@ msgstr "Cereți resetarea parolei"
 msgid "Request your password reset"
 msgstr "Cereți resetarea parolei"
 
-#: app/routes.py:24
+#: app/routes.py:31
 msgid "Your post is now live."
 msgstr "Ați postat."
 
-#: app/routes.py:38 app/templates/base.html:21
+#: app/routes.py:45 app/templates/base.html:21
 msgid "Home"
 msgstr "Acasă"
 
-#: app/routes.py:53
+#: app/routes.py:60
 msgid "Invalid username or password"
 msgstr "Nume de utilizator sau parolă invalide."
 
-#: app/routes.py:77
+#: app/routes.py:84
 msgid "Registration successful!"
 msgstr "V-ați înregistrat cu succes!"
 
-#: app/routes.py:119
+#: app/routes.py:127
 msgid "Your changes have been saved."
 msgstr "Schimbările au fost salvate."
 
-#: app/routes.py:124
+#: app/routes.py:132
 msgid "Edit profile"
 msgstr "Editare profil"
 
-#: app/routes.py:133 app/routes.py:153
+#: app/routes.py:141 app/routes.py:161
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Utilizatorul %(username)s nu a fost găsit."
 
-#: app/routes.py:136
+#: app/routes.py:144
 msgid "You cannot follow yourself."
 msgstr "Nu te poți urmări pe tine însuți."
 
-#: app/routes.py:140
+#: app/routes.py:148
 #, python-format
 msgid "You are now following %(username)s."
 msgstr "Acum urmăriți pe %(username)s."
 
-#: app/routes.py:156
+#: app/routes.py:164
 msgid "You cannot unfollow yourself."
 msgstr "Nu te poți urmări pe tine însuți."
 
-#: app/routes.py:160
+#: app/routes.py:168
 #, python-format
 msgid "You are no longer following %(username)s."
 msgstr "Nu îl mai urmăriți pe %(username)s."
 
-#: app/routes.py:180 app/templates/base.html:22
+#: app/routes.py:188 app/templates/base.html:22
 msgid "Explore"
 msgstr "Explorați"
 
-#: app/routes.py:195
+#: app/routes.py:203
 msgid "Check your email for password reset instructions."
 msgstr "Verificați-vă email-ul pentru instrucțiuni de resetarea a parolei."
 
-#: app/routes.py:197
+#: app/routes.py:205
 msgid "Reset password"
 msgstr "Resetare parolă"
 
-#: app/routes.py:210
+#: app/routes.py:218
 msgid "Your password has been reset."
 msgstr "Parola a fost resetată."
 
@@ -163,6 +163,10 @@ msgstr "Ne cerem scuze"
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s a spus cu %(when)s"
 
+#: app/templates/_post.html:27
+msgid "Translate"
+msgstr "Traduceți"
+
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
 msgstr "Bine ați venit pe Microblog"
@@ -178,6 +182,10 @@ msgstr "Profil"
 #: app/templates/base.html:29
 msgid "Logout"
 msgstr "Deconectare"
+
+#: app/templates/base.html:67
+msgid "Error: Could not contact server."
+msgstr "Eroare: Server-ul nu a putut fi contactat."
 
 #: app/templates/edit_profile.html:5
 msgid "Edit Profile"
